@@ -1,0 +1,99 @@
+
+var Animal= function(name, diet){
+    this.name = name;
+    this.diet = diet;
+};
+undefined
+Animal.prototype.sleep = function(hours){
+console.log(name + "is sleeping " + hours + " hours.");
+};
+? (hours){
+console.log(name + "is sleeping " + hours + " hours.");
+}
+Animal.prototype.move = function(movement){
+    console.log(this.name + " is " + movement);
+};
+? (movement){
+    console.log(this.name + " is " + movement);
+}
+Animal.prototype.eat= function(){
+console.log(name + "is eating " + diet);
+};
+? ()
+{
+con
+
+
+var animal2= function(name, diet){
+ this.name =name;
+ this.diet = diet;
+} ;
+animal2.sleep=function(hours){
+console.log(this.name +" is sleeping " + hours + "hours")};
+animal2.eat=function(){ 
+ console.log(this.name+ " is eating " + this.diet)};
+animal2.move =function(movement){
+console.log(this.name + " is " + movement)};
+
+var dog = function(name, diet, breed){ animal2.call(this, name, diet);
+this.breed = breed;
+bark=function(){console.log("Woof")};};
+
+var cat = function(name, diet, sound){
+animal2.call(this, name, diet);
+this.sound = sound;
+makeSound = function{console.log(this.sound)};
+};
+
+var lion = function(name, diet, sound){
+cat.call(this, name, diet, sound);
+};
+
+====================================
+ES6
+
+class Animal{
+constructor(name, diet){
+this.name= name;
+this.diet = diet;
+}
+sleep(hours)
+{
+
+console.log(this.name +" is sleeping " + hours + "hours")
+};
+eat(){
+ 
+ console.log(this.name+ " is eating " + this.diet)
+};
+move(movement){
+
+console.log(this.name + " is " + movement)
+};
+};
+
+class Dog extends Animal{
+constructor(name, diet, breed){
+super(name, diet);
+this.breed=breed;
+}
+bark(){
+console.log("Woof")
+};
+};
+
+class Cat extends Animal{
+constructor(name, diet, sound){
+super(name, diet);
+this.sound= sound;
+}
+makeSound(){
+console.log(this.sound);
+};
+};
+
+class Lion extends Cat{
+constructor(name, diet, sound){
+super(name, diet, sound);
+};
+};
